@@ -3,7 +3,8 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
-<div class="wrapper fadeInDown">
+
+<div>
     <div id="formContent">
         <!-- Tabs Titles -->
 
@@ -13,8 +14,8 @@
         </div> -->
 
         <!-- Login Form -->
-        <form [formGroup]="formularioLogin">
-            <input type="email" class="form-control" id="email" formControlName="email" aria-describedby="emai lHelp" placeholder="Login">
+        <form [formGroup]="formularioLogin" class="login">
+            <input type="email" class="form-control" id="email" formControlName="email" aria-describedby="emai lHelp" placeholder="Username">
             <input type="password" class="form-control" id="password" (keyUp.enter)="ingresar()" formControlName="password" placeholder="Password">
             <button type="submit" (click)="ingresar()" [disabled]="!formularioLogin.valid" class="btn btn-dark m-2">Submit</button>
         </form>
