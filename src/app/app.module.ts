@@ -13,13 +13,15 @@ import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ListadoClientesComponent } from './listado-clientes/listado-clientes.component';
+import { AgregarClientesComponent } from './agregar-clientes/agregar-clientes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HeaderComponent,
-    ListadoClientesComponent
+    ListadoClientesComponent,
+    AgregarClientesComponent
   ],
   imports: [
     BrowserModule,

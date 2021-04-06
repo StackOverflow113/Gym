@@ -5,13 +5,13 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyCfOQXd96HkheWMQ3REF_Zlo0qCM9angPk",
-    authDomain: "anser-f3483.firebaseapp.com",
-    projectId: "anser-f3483",
-    storageBucket: "anser-f3483.appspot.com",
-    messagingSenderId: "416481570606",
-    appId: "1:416481570606:web:02c5f5b3d1e717251214bf",
-    measurementId: "G-FVDF2WM86T"
+    apiKey: "AIzaSyAc3tSVePhSRlnqNOnU2qtZYSiJ1pt4piQ",
+    authDomain: "gymcm-84488.firebaseapp.com",
+    projectId: "gymcm-84488",
+    storageBucket: "gymcm-84488.appspot.com",
+    messagingSenderId: "1034817797759",
+    appId: "1:1034817797759:web:bbf19ce6f8778b3edf894a",
+    measurementId: "G-1EZ1MF28XJ"
   }
 };
 
