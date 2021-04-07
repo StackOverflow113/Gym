@@ -6,14 +6,7 @@
 
 <div>
     <div id="formContent">
-        <!-- Tabs Titles -->
 
-        <!-- Icon
-        <div class="fadeIn first p-2">
-            <img src="#" id="icon" alt="User Icon" />
-        </div> -->
-
-        <!-- Login Form -->
         <form [formGroup]="formularioLogin" class="login">
             <input type="email" class="form-control" id="email" formControlName="email" aria-describedby="emai lHelp" placeholder="Username">
             <input type="password" class="form-control" id="password" (keyUp.enter)="ingresar()" formControlName="password" placeholder="Password">

@@ -12,20 +12,16 @@ export class ListadoClientesComponent implements OnInit {
   clientes: any[] = new Array<any>();
   constructor(private db: AngularFirestore) { }
 
-  ngOnInit(): void {
-    // this.db.collection('clientes').valueChanges().subscribe((resultado) => {
+  ngOnInit() {
+    // this.db.collection('clientes').valueChanges().subscribe((resultado)=>{
     //   this.clientes = resultado;
-    //   console.log(resultado);
-    // }) ESPERAR XD
+    //   console.log(resultado)
+    // });
 
     this.clientes.length = 0;
     this.db.collection('clientes').get().subscribe((resultado) => {
-      console.log(resultado.docs)
-
       resultado.docs.forEach((item) => {
-        console.log(item.id)
-        console.log(item.data())
-        console.log(item.ref)
+
 
         let cliente = item.data();
         cliente = item.id;
@@ -33,10 +29,10 @@ export class ListadoClientesComponent implements OnInit {
         this.clientes.push(cliente)
       })
 
-
-    });
-
+    })
 
   }
+
+
 
 }
